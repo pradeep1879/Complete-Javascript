@@ -31,4 +31,16 @@ const countChar = (str, l) => {
   console.log(count);
 }
 
-countChar("MissIssippi", "I")
+// countChar("MissIssippi", "I")
+
+
+const reverseString = (str) => {
+  let r_str = "";
+  for(let i = str.length - 1; i >= 0; i--){
+    r_str += str[i]
+  }
+  // console.log(r_str)
+}
+reverseString("hello")
+
+
