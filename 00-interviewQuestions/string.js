@@ -44,3 +44,23 @@ const reverseString = (str) => {
 reverseString("hello")
 
 
+const repeatString = (str, num) => {
+  return num > 0 ? str.repeat(num) : str
+}
+// console.log(repeatString("abc", 5))
+
+
+
+const truncateString = (str, num) => {
+  // if(num <= 0){
+  //   return str;
+  // }else if (str.length > num){
+  //   return str.slice(0,num).concat(" ... ")
+  // }
+  return num <= 0 ? str : str.slice(0,num).concat(" ... ") 
+
+}
+// console.log(truncateString("A-ticket a-tasket A green and yellow basket", 8))
+
+
+
