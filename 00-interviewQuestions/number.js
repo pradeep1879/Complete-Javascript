@@ -61,8 +61,23 @@ const isEmptyObjectt = (obj) => {
 
 const obj = {
   name: "Pradeep Kumar",
-  age: 1  
+  age: 22,
+  city: "Jhunjhunu"
+};
+
+
+const entries = Object.entries(obj);
+// console.log(entries);
+// console.log(entries.flat());
+
+let newObj = Object.fromEntries(entries);
+
+// console.log(newObj)
+
+const calculateSimpleInterest = (principle, rate, year) => {
+  return  (principle * rate * year) / 100
 }
+// console.log(calculateSimpleInterest(1000, 5, 3));
 
 
 
