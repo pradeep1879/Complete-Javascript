@@ -25,14 +25,3 @@ const calculateAge = (d) => {
 // console.log(calculateAge("1990-05-15"));
 // console.log(calculateAge("1990-04-15"));
 
-const generateBarChart = (arr) => {
-  const newArr = arr.map((e, i) => {
-    let star = "";
-    for (let k = 0; k < e; k++) {
-      star += "*";
-    }
-    return `${i + 1}: ${star}`;
-  });
-  // console.log(newArr.join("\n"))
-};
-generateBarChart([5, 3, 9, 2]); // we can also use repeat method for this question;
