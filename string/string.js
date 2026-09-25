@@ -12,6 +12,23 @@ console.log(str[0] === str.charAt(0))
 let str1 = "   hello world   ";
 console.log(str.trim()); // "hello world"
 
+// ways to concatenate strings
+ // Operator
+ let s1 = "Hello";
+ let s2 = "World";
+
+ let r1 = s1 + s2;
+ console.log(r1) // output: HelloWorld
+  
+ // Concat() method
+ let r2 = s1.concat(s2);
+ console.log(r2); // output: HelloWorld
+ 
+ // join() method
+ let strings = [s1, s2];
+ let r4 = strings.join(' ');
+ console.log(r4); // output: HelloWorld
+
 
 // slice Method
 let str2  = "Javascript"
