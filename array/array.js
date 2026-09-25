@@ -78,4 +78,35 @@ if (index !== -1) {
 console.log(arr); // [10, 20, 30]
 
 
+// Push(modify the original array) and concat(doesn't modify the original array)
+// Pop
+
+// array-like objects in JS(are the objects that have indexed elements and a length property , similarto arrays)
+const str = "Hello";
+console.log(str)
+console.log(str.length)
+console.log(str[3])
+
+// How to convert an array-like object into an array?
+var arrayLike = {0: 'a', 1: 'b', 2: 'c', length: 3};
+var array1 = Array.from(arrayLike);
+console.log(array1); // output: ['a', 'b', 'c']
+
+//using spread syntax (...)
+var array2 = [...arrayLike];
+console.log(array2); // output: ['a', 'b', 'c']
+
+
+// for-in loop
+const person = {
+   name: "Happy",
+   role: "Developer"
+}
+for (let key in person){
+   console.log(person[key]); // output: Happy Developer
+}
+//forEach method
+Object.values(person).forEach(value => {
+   console.log(value); // output: Happy Developer
+})
 
