@@ -1,0 +1,10 @@
+[
+  {
+    "file": "./code/package.json",
+    "contents": "{\"name\": \"codeProject\"}"
+  },
+  {
+    "file": "./code/index.js",
+    "contents": "console.log('hi there')"
+  }
+]
