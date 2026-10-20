@@ -40,7 +40,7 @@ console.log([] == ![]) // true
  */
 
 
-console.log("2" > "10")
+console.log("20" > "13") // false
 /**
  * When both values are strings, JavaScript does lexicographical (dictionary) comparison,
  *  not numeric comparison.
